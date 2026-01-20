@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MLSA Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="nav-left">
+     <img src="./img/mlsa_logo.png" alt="MLSA Logo" class="logo">
+
+      <h1>Microsoft Learn Student Ambassadors</h1>
+    </div>
+    <nav class="nav-right">
+      <a href="#mission">🚀 Mission</a>
+      <a href="#activities">⚡ Activities</a>
+      <a href="#benefits">🎯 Benefits</a>
+      <a href="https://forms.gle/kN82aFKFP87xd75u8" target="_blank" class="register-btn">Register</a>
+    </nav>
+  </header>
+
+  <!-- HERO / COVER -->
+  <section id="hero">
+    <div class="hero-content">
+      <img src="./img/mlsa_logo.png" alt="MLSA Logo" class="logo">
+      <h1>Join the MLSA Community</h1>
+      <p>Empowering students with technical skills, leadership opportunities, and global networking using Microsoft technologies like AI, Azure, and more.</p>
+      <a href="https://forms.gle/kN82aFKFP87xd75u8" target="_blank" class="cta">Register Now</a>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section id="mission" data-aos="fade-up" data-aos-duration="1000">
+    <h2 class="section-title">Our Mission</h2>
+    <div class="cards">
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Empower Students</h3>
+        <p>To empower students with technical knowledge, leadership skills, and real-world experience using Microsoft technologies.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Community Growth</h3>
+        <p>Build a strong learning community that promotes collaboration, innovation, and continuous learning.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Drive Innovation</h3>
+        <p>Foster AI-driven solutions and bridge the gap between academia and industry.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section id="activities" data-aos="fade-up" data-aos-duration="1000">
+    <h2 class="section-title">Our Activities</h2>
+    <div class="cards">
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Workshops</h3>
+        <p>Hands-on workshops on Microsoft tools, cloud, AI, and development technologies.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Hackathons</h3>
+        <p>Problem-solving events encouraging innovation and teamwork.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Speaker Sessions</h3>
+        <p>Sessions with industry experts and MLSA seniors.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="400">
+        <h3>Project Showcases</h3>
+        <p>Build and present AI/cloud projects with Microsoft support.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section id="benefits" data-aos="fade-up" data-aos-duration="1000">
+    <h2 class="section-title">Why Join MLSA?</h2>
+    <div class="cards">
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Skill Development</h3>
+        <p>Gain practical, industry-relevant technical skills with free Azure credits and tools.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Leadership Growth</h3>
+        <p>Improve leadership, communication, and teamwork abilities through events.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Career Opportunities</h3>
+        <p>Expand your professional network, get certifications, and boost your resume.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="400">
+        <h3>Exclusive Perks</h3>
+        <p>Free Microsoft 365, exam vouchers, swag, and global recognition.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer data-aos="fade-up" data-aos-duration="1000">
+    <div class="footer-content">
+      <p>© 2026 Microsoft Learn Student Ambassadors – Lahore Chapter</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init(); 
+
+    //scroll
+    document.querySelectorAll('header nav a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
